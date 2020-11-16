@@ -1,0 +1,16 @@
+---
+templateClass: tmpl-product
+---
+{% extends "layouts/base.njk" %}
+
+<h1>{{ title }}</h1>
+{% if post.description %}<p>{{ post.description }}</p>{% endif %}
+<div>
+  {% if post.price %}£{{ post.price }} {% if post.price_info %}<small>{{ post.price_info }}</small>{% endif %} - {% endif %}
+  <a href="mailto:hello@prettylittlezebra.com?subject=Order {{ post.title | urlencode }}">Email to Order</a>
+</div>
+<figure>
+  <img alt="" src="{{ post.image }}">
+</figure>
+
+{{ content | safe }}

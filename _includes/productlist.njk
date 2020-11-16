@@ -1,0 +1,17 @@
+<div class="products">
+{% for product in productlist | reverse %}
+  <div class="product">
+    <div class="product-media">
+      <a href="{{ product.url }}"><img alt="" src="{{ product.data.image }}"></a>
+    </div>
+    <h3 class="product-title">{{ product.data.title }}</h3>
+    {% if product.data.description %}
+    <p class="product-desc"><small>{{ product.data.description }}</small></p>
+    {% endif %}
+    <div>
+      {% if product.data.price %}£{{ product.data.price }} {% if product.data.price_info %}<small>{{ product.data.price_info }}</small>{% endif %} - {% endif %}
+      <a href="mailto:hello@prettylittlezebra.com?subject=Order {{ product.data.title | urlencode }}">Email to Order</a>
+    </div>
+  </div>
+{% endfor %}
+</div>

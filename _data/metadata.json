@@ -1,0 +1,25 @@
+{
+  "title": "Pretty Little Zebra",
+  "url": "https://prettylittlezebra.com",
+  "domain": "prettylittlezebra.com",
+  "description": "Personalised gifts, candles, cards, glasses and many more handmade creations! ",
+  "genre": "Insert a schema.org genre",
+  "googleAnalyticsId": "Update me",
+  "feed": {
+    "subtitle": "Subtitle. Update me.",
+    "filename": "feed.xml",
+    "path": "/feed/feed.xml",
+    "id": "https://prettylittlezebra.com"
+  },
+  "jsonfeed": {
+    "path": "/feed/feed.json",
+    "url": "https://prettylittlezebra.com/feed/feed.json"
+  },
+  "author": {
+    "name": "Jodie Waggoner",
+    "twitterHandle": "prettylittlezebra"
+  },
+  "publisher": {
+    "name": "Jodie Waggoner, Pretty Little Zebra"
+  }
+}
