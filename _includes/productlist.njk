@@ -2,7 +2,7 @@
 {% for product in productlist | reverse %}
   <div class="product">
     <div class="product-media">
-      <a href="{{ product.url }}"><img alt="" src="{{ product.data.image }}"></a>
+      <img alt="" src="{{ product.data.image }}">
     </div>
     <h3 class="product-title">{{ product.data.title }}</h3>
     {% if product.data.description %}

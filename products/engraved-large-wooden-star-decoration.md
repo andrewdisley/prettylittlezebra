@@ -10,3 +10,6 @@ layout: layouts/product.njk
 image: /img/products/engraved-large-wooden-star-decoration.jpg
 price: "10.00"
 ---
+
+
+![](/img/products/engraved-large-wooden-star-decoration-zoom.jpg)
